@@ -1,6 +1,10 @@
 def pangkat(base, pangkat):
     # your code here
-    return 'error response'
+    result = 1
+    for i in range (pangkat):
+        result *= base
+    return result
+        
 
 
 if __name__ == '__main__':
@@ -9,3 +13,12 @@ if __name__ == '__main__':
     print(pangkat(10, 2)) # 100
     print(pangkat(2, 5)) # 32
     print(pangkat(7, 3)) # 343
+    
+#LITE VERSION    
+#ver basic
+# def pangkat(base, pangkat):
+#     base**pangkat
+
+# other version
+# def pangkat(base, pangkat):  
+#     pow(base,pangkat)
